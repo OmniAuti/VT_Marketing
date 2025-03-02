@@ -488,7 +488,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	/* HOME DEMO */
 	
 	#home--demo {
-		margin-top: 8rem;
+		margin-top: 6rem;
 		min-height: 340px;
 		width: 100%;
 	}
@@ -601,7 +601,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		width: 100%;
 		display: flex;
 		gap: 8rem;
-		margin-top: 8rem;
+		margin-top: 6rem;
 		margin-bottom: 8rem;
 	}
 
@@ -633,7 +633,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 	/* PRICING PAGE */
 	#pricing-page--container {
-		margin-top: 8rem;
+		margin-top: 6rem;
 	}
 
 	#pricing-page--container.section--default {
@@ -641,7 +641,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	}
 
 	#pricing-page--container .quote-box--container {
-		margin-top: 6rem;
+		margin-top: 8rem;
 		margin-bottom: 4rem;
 	}
 
@@ -649,6 +649,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		display: flex;
 		align-items: center;
 		gap: 8rem;
+	}
+	
+	.pricing-page-text--container div {
+		padding-bottom: 2rem;
 	}
 
 	.pricing-page-text--container img {
@@ -708,6 +712,40 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		position: absolute
 	}
 
+	/*ABOUT  PAGE*/
+	#about-page--container {
+		display: flex;
+		align-items: start;
+		justify-content: center;
+		margin-top: 6rem;
+		gap: 4rem;
+	}
+
+	#about-page--container .about-page-text--container {
+		width: 60%;
+	}
+
+	#about-page--container .about-page-text--container .hero--text,
+	#about-page--container .about-page-text--container .section--text {
+		text-align: left;
+		margin: 0;
+		margin-bottom: 4rem;
+	}
+
+	#about-page--container .about-page-photos--container {
+		width: 40%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+
+
+	.about-demo--btn {
+		margin: 6rem auto;
+	}
+
 	@media screen and (max-width: 800px) {
 		.section--default {
 			max-height: unset;
@@ -747,11 +785,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 		#pricing-page--container .quote-box--container {
 			margin-top: 6rem;
-			margin-bottom: 6rem;
+			margin-bottom: 2rem;
 		}
 
 		.pricing-page-text--container {
-			flex-direction: column-reverse;
+			flex-direction: column;
+			gap: 0rem;
+		}
+		
+		.pricing-page-text--container div {
+			padding-bottom: 0rem;
 		}
 		
 		#pricing-page--container .pricing-page-text--container div a {
@@ -761,6 +804,36 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		.pricing-page-text--container img {
 			max-width: 540px;
 			width: 100%;
+		}
+
+		#about-page--container {
+		flex-direction: column;
+		}
+
+		#about-page--container .about-page-text--container {
+			width: 100%;
+		}
+
+		#about-page--container .about-page-text--container img {
+			display: block;
+			margin-left: 0;
+			margin-left: auto;
+			width: 100%;
+			max-width: 350px;
+		}
+	
+		#about-page--container .about-page-photos--container {
+			width: 100%;
+			flex-direction: row;
+		}
+
+		#about-page--container .about-page-photos--container  img{
+			max-width: 200px;
+		}
+
+		.about-demo--btn {
+			margin-top: auto;
+			margin-bottom: 0;
 		}
 	}
 
@@ -863,11 +936,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			margin-bottom: 3rem;
 		}
 
-
 		.demo-quote-page--container {
 			flex-direction: column;
 		}
 		
+		#about-page--container .about-page-photos--container {
+			flex-direction: column;
+		}
+
+		#about-page--container .about-page-photos--container  img{
+			width: 100%;
+			max-width: 200px;
+		}
+
+		.about-demo--btn {
+			margin: 4rem auto;
+		}
 	}	
 
 

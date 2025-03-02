@@ -39,7 +39,7 @@ get_header();
 			</article>
 		<div class="pricing-page-text--container">
 			<img src="http://localhost/VT/wp-content/uploads/images/VolleyTheory_ProductMockup_Login.svg" alt="Login Example">
-			<div >
+			<div>
 				<h3 class="section--subheadline">Winning starts with the right matchup</h3>
 				<p class="section--text">Volley Theory gives you the complete view of all the unique matchups possible between your lineup and any other team you play. No other platform offers this insight.</p>
 				<a class="link--btn" href="/demo">Schedule demo</a>
